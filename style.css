@@ -1,0 +1,143 @@
+/* Common styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 50px;
+}
+
+.editor, .preview {
+    width: 50%;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+    background-color: #fff;
+    margin: 0 20px;
+}
+
+.editor h2, .preview h2 {
+    margin-top: 0;
+    font-size: 32px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.code-section {
+    display: flex;
+    flex-direction: column;
+}
+
+textarea {
+    flex: 1;
+    margin-bottom: 30px;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 15px;
+    resize: none;
+    font-size: 18px;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f8f9fa;
+    transition: border-color 0.3s ease;
+    outline: none;
+}
+
+textarea:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button {
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.button-primary {
+    background-color: #007bff;
+    color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 123, 255, 0.5);
+}
+
+.button-primary:hover {
+    background-color: #0056b3;
+}
+
+.button-secondary {
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+.button-secondary:hover {
+    background-color: #e9ecef;
+}
+
+.export-button {
+    margin-top: 30px;
+}
+
+.preview {
+    position: relative;
+}
+
+.preview-content {
+    border-radius: 20px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+}
+
+iframe {
+    width: 100%;
+    height: 600px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.3);
+}
+
+/* Additional styles */
+body {
+    background: linear-gradient(to right, #4d4d4d, #333);
+}
+
+.container {
+    padding: 20px;
+}
+
+.editor, .preview {
+    border-radius: 8px;
+    box-shadow: 0px 0px 15px 0px rgba(0, 0, 0, 0.1);
+    width: 45%;
+    margin: 0 10px;
+}
+
+textarea {
+    border: 1px solid #ccc;
+    border-radius: 10px; /* Slightly increased border radius for softer look */
+    padding: 15px; /* Increased padding for better readability */
+    width: calc(100% - 20px);
+    margin-bottom: 20px; /* Reduced margin for more compact layout */
+    font-size: 16px; /* Reduced font size for better proportion */
+    background-color: #f0f0f0; /* Lighter background color */
+    transition: border-color 0.3s ease;
+}
+
+textarea:focus {
+    border-color: #007bff;
+}
